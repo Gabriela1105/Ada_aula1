@@ -1,82 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
   <title>layout 3</title>
-  <style>
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-    }
-
-    p {
-      margin-top: 0;
-    }
-
-    header {
-      background-color: chocolate;
-      display: flex;
-      /* justify-content: center; */
-    }
-
-    header>img {
-      height: 100px;
-      width: 200px;
-      margin: 10px auto;
-    }
-
-    main {
-      background-color: darkgreen;
-      height: calc(100% - 160px);
-      display: flex;
-    }
-
-    article {
-      padding: 20px;
-      overflow: auto;
-    }
-
-    aside {
-      background-color: magenta;
-      min-width: 200px;
-      padding: 20px;
-    }
-
-    footer {
-      padding: 10px;
-      background-color: firebrick;
-    }
-
-    ul {
-      list-style: none;
-      margin-top: 0;
-      padding-left: 10px;
-    }
-
-    @media (max-width: 500px) {
-      main {
-        background-color: blue;
-        flex-direction: column-reverse;
-      }
-
-      aside {
-        min-height: 100px;
-        overflow: auto;
-      }
-    }
-  </style>
 </head>
 
 <body>
   <header>
-    <img src="images/ada.jpeg" alt="LOGO" />
+    <div class="logo">
+      <img src="./img/artificial-intelligence-g22319d9d4_1920.png" alt="LOGO" />
+    </div>
+    <div class="navegacao">
+      <nav>
+        <ul>
+          <li><a href="./layouts1.html">Hello World!</a></li>
+          <li><a href="./layouts2.html">Layout 2</a></li>
+          <li><a href="#">Layout 3</a></li>
+          <li><a href="./layouts4.html">Layout 4</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main>
+  <main id="principal-2">
     <article>
+      <h1>Qualquer titulo</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta luctus nisi at vulputate. Quisque nec mi
         odio. Morbi blandit metus sit amet risus aliquam imperdiet a et nibh. Ut arcu dui, scelerisque vitae justo quis,
@@ -85,18 +36,6 @@
         mauris eu erat eleifend dapibus. Ut ultricies ante nunc, in ultrices risus varius eget. Quisque congue eros non
         lacinia posuere. Mauris convallis tellus non neque pellentesque, et pretium mi bibendum. Phasellus in aliquet
         neque. Morbi at laoreet metus.
-      </p>
-      <p>
-        Suspendisse in risus commodo, cursus mi at, condimentum diam. Nam vitae ligula ac elit blandit suscipit.
-        Suspendisse lacinia gravida ullamcorper. Maecenas vehicula purus ante, at consequat orci iaculis id. Aenean quis
-        placerat lacus, a egestas dui. Donec egestas arcu vel leo posuere, at ornare tellus pretium. Mauris dapibus
-        lectus
-        quis velit feugiat vestibulum. Aenean eu turpis sed lectus venenatis porta. Nunc justo eros, efficitur vel neque
-        et, euismod interdum tellus. Nunc aliquam varius malesuada. Sed quis pulvinar turpis, ut mattis elit.
-        Suspendisse
-        sit amet erat sapien. Nam congue nulla suscipit, pellentesque arcu pretium, ultrices est. Proin quam massa,
-        congue
-        vitae sapien eget, laoreet ultrices nisi.
       </p>
       <p>
         Vestibulum ac mattis metus. Curabitur ut nunc et nibh auctor mattis nec at purus. In iaculis nibh quis velit
@@ -124,49 +63,35 @@
         ac
         justo. Nunc pulvinar nibh vel arcu pretium mollis.</p>
     </article>
-    <aside>
-      <b>Category</b>
-      <ul>
-        <li>
-          Link
-        </li>
-        <li>
-          Link
-        </li>
-        <li>
-          Link
-        </li>
-      </ul>
 
-      <b>Category 2</b>
+    <aside>
+      <b>Categoria 1</b>
       <ul>
-        <li>
-          Link
-        </li>
-        <li>
-          Link
-        </li>
-        <li>
-          Link
-        </li>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
       </ul>
-      <b>Category 3</b>
+      <b>Categoria 2</b>
       <ul>
-        <li>
-          Link
-        </li>
-        <li>
-          Link
-        </li>
-        <li>
-          Link
-        </li>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+      </ul>
+      <b>Categoria 3</b>
+      <ul>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+      </ul>
       </ul>
     </aside>
   </main>
 
   <footer>
-    Copyright © 2023 Ada
+    Gabriela Alves Copyright ©2023 
   </footer>
 </body>
 
