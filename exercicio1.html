@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document 10/02</title>
+
+    <style>
+        /* Geral */
+        .projetos {
+            display: grid;
+            justify-items: center;
+            align-items: center;
+        }
+
+        /* formulario */
+        .form-contato {
+            border: 2px solid;
+            border-radius: 10px;
+            background-color: cadetblue;
+
+        }
+
+        input {
+            width: 100%;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+
+        select {
+            width: 100%;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+
+        textarea {
+            border-radius: 5px;
+        }
+
+        label {
+            margin: 0.5rem;
+        }
+
+        .campos {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            margin: 1rem;
+        }
+
+        .selec {
+            padding: 5px 10px;
+        }
+
+        .button {
+            margin: 1rem;
+            cursor: pointer;
+        }
+
+        .enviar {
+            background-color: darkgreen;
+            color: aliceblue;
+
+        }
+
+        .limpar {
+            background-color: brown;
+            color: aliceblue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Exercícios:</h1>
+        <hr>
+
+
+        <section id="formulario" class="projetos">
+            <h4>
+                3) Criar um <mark>formulário</mark>; Utilizar labels com for para cada input; Utilizar as propriedades
+                id e
+                name; Utilizar pelo menos 5 tipos de inputs diferentes.
+            </h4>
+
+            <form action="" class="form-contato">
+                <!-- action; nele, você coloca a URL de um recurso do servidor capaz de processar os formulários.  -->
+
+                <div class="campos">
+                    <label for="mome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="campos">
+                    <label for="data">Data de Nascimento: </label>
+                    <input type="date" id="data" name="data" required>
+                </div>
+
+                <div class="campos">
+                    Estado Civil:
+                    <input name="estadocivil" type="radio" value="solteiro" required /> Solteiro
+                    <input name="estadocivil" type="radio" value="casado" required /> Casado
+                </div>
+
+                <div class="campos">
+                    <label for="email">E-mail: </label>
+                    <input type="email" id="email" name="email" required placeholder="abcd@email.com">
+                </div>
+
+                <div class="campos">
+                    <label for="telefone">Telefone: </label>
+                    <input type="tel" id="telefone" required placeholder="(xx) xxxxx-xxxx">
+                </div>
+
+                <div class="campos selec">
+                    <select name="select" id="seletc" required>
+                        <option value="" disabled selected>Selecione sua profissão...</option>
+                        <option value="receita">Desenvolvedor(a) Front end</option>
+                        <option value="despesas">Desenvolvedor(a) Back end</option>
+                        <option value="transferencia">Cientistas de Dados</option>
+                        <option value="transferencia">Enheiro de software</option>
+                        <option value="transferencia">Outros</option>
+                    </select>
+                </div>
+
+                <div class="campos">
+                    <textarea name="bio" id="bio" cols="30" rows="10"
+                        placeholder="Caso você tenha marcado OUTROS por favor, sinalize qual é sua profissão ?..."></textarea>
+                </div>
+
+                <div class="campos botao">
+                    <input type="submit" id="sub" name="sub" class="button enviar">
+                    <input name="reset" type="reset" value="limpar" class="button limpar" />
+                </div>
+
+            </form>
+        </section>
+        <section id="tabela" class="projetos">
+            <h4> 1) Criar uma <mark>tabela</mark> com um uso de colspan e um uso de rowspan.</h4>
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Despesa</th>
+                        <th>Valor</th>
+                        <th>Vencimento</th>
+                        <th>Pago</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Energia</td>
+                        <td>R$ 135,00</td>
+                        <td rowspan="2">15/06/2022</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>Gás</td>
+                        <td>R$ 50,00</td>
+                        <!-- <td>15/06/2022</td> -->
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>Água</td>
+                        <td>R$ 150,00</td>
+                        <td>19/06/2022</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>Alimentação</td>
+                        <td>R$ 500,00</td>
+                        <!-- <td >12/06/2022</td> -->
+                        <td colspan="2">...</td>
+                    </tr>
+                    <tr>
+                        <td>Lazer</td>
+                        <td>R$ 500,00</td>
+                        <td>12/06/2022</td>
+                        <td>...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+        <section id="lista" class="projetos">
+            <h4>
+                2) Criar uma <mark>lista ordenada</mark> e uma <mark>lista não ordenada; Aplicar uma classe pelo menos
+                    em
+                    uma tag.</mark>
+            </h4>
+
+            <div id="ordenada">
+                <h5>Lista Ordenada</h5>
+                <ol>
+                    <li>Arroz</li>
+                    <li>Batata</li>
+                    <li>Feijão</li>
+                    <li>Macarrão</li>
+                    <li>Suco</li>
+                </ol>
+                <h5>Lista Não Ordenada</h5>
+                <ul>
+                    <li>Maça</li>
+                    <li>Banana</li>
+                    <li>Uva</li>
+                    <li>Abacaxi</li>
+                    <li>Limão</li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+    </main>
+</body>
+
+</html>

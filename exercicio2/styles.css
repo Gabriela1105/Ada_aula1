@@ -1,0 +1,61 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+header {
+  background-color: chocolate;
+  display: flex;
+  /* justify-content: center; */
+}
+
+header>img {
+  height: 100px;
+  width: 200px;
+  margin: 10px auto;
+}
+
+main {
+  background-color: darkgreen;
+  height: calc(100% - 160px);
+  display: flex;
+}
+
+article {
+  padding: 20px;
+  overflow: auto;
+}
+
+aside {
+  background-color: magenta;
+  min-width: 200px;
+  padding: 20px;
+}
+
+footer {
+  padding: 10px;
+  background-color: firebrick;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  padding-left: 10px;
+}
+
+@media (max-width: 500px) {
+  main {
+    background-color: blue;
+    flex-direction: column-reverse;
+  }
+
+  aside {
+    min-height: 100px;
+    overflow: auto;
+  }
+}
